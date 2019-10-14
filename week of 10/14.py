@@ -19,7 +19,14 @@ def archimedes(numSides):
 
 print(archimedes(4))
 print(archimedes(8))
-print(archimedes(16))
+print(archimedes(360000000))
 
 for sides in range(8, 100, 8):
     print(sides, archimedes(sides))
+
+# See the loop above. In addition to the value of pi, print the difference
+# between the values calculated by the archimedes function and by math.pi.
+# How many sides does it take to make the two close?
+# It takes 40, 400, 40 to make the Archimedes close.
+
+print(math.pi)
