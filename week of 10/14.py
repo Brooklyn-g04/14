@@ -73,8 +73,8 @@ for val in range(1, 201, 2):
 print(acc)
 
 # write a function that returns the average to the first N numbers, where N is a parameter
-N = 0
 acc = 0
+N = acc + 3
 for val in range(N, 101, 2):
     acc = acc + val
 print(acc)
