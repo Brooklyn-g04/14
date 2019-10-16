@@ -58,12 +58,14 @@ acc = 0
 for val in range(0, 201, 2):
     acc = acc + val
 print(acc)
+# this equals 10100
 
 # sum of the first 50 odd numbers
 acc = 0
 for val in range(1, 101, 2):
     acc = acc + val
 print(acc)
+# this equals 2500
 
 # average of the first 100 odd numbers
 
@@ -71,6 +73,7 @@ acc = 0
 for val in range(1, 201, 2):
     acc = acc + val / 100
 print(acc)
+# this equals 100.0
 
 # write a function that returns the average to the first N numbers, where N is a parameter
 acc = 0
@@ -78,4 +81,32 @@ N = acc + 3
 for val in range(N, 101, 2):
     acc = acc + val
 print(acc)
+# this equals 2499
 
+# Write a function called factorial that computes the product of the first N numbers, where N is a parameter
+
+factorial = N
+for val in range (N, 101):
+    factorial = val + factorial
+print(factorial)
+# this equals 5050
+
+# Each number in the Fibonacci sequence is the sum of the previous two numbers.The first two numbers in the sequence are 1 and 1.Compute the 10th Fibonacci number.
+
+acc = 0
+
+for val in range(1, 11):
+    acc = val + acc
+print(acc)
+
+# this equals 55
+
+# Write a function to compute the Nth Fibonacci number, where N is a parameter.You may assume that N will be greater than or equal to 3.
+
+N = 3
+acc = 0
+for val in range(1, N,):
+    acc = val + acc
+print(acc)
+# the greater sign has no effect to th equation or answer, so if you have a rule that says that the variable is greater than 3 than you can use any positive integer greater than 3.
+# this equals 3
