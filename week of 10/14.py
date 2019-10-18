@@ -105,8 +105,26 @@ print(acc)
 
 N = 3
 acc = 0
-for val in range(1, N,):
+for val in range(1, N):
     acc = val + acc
 print(acc)
 # the greater sign has no effect to th equation or answer, so if you have a rule that says that the variable is greater than 3 than you can use any positive integer greater than 3.
 # this equals 3
+
+# A Monte Carlo simulation
+
+# random numbers
+
+import random
+
+print(random.random())
+# Boolean Expressions
+# <, <=, >, >=, ==, !=
+# == compare
+# < less than
+# > greater than
+# >= greater than or equal to
+# <= less than or equal to
+
+# compound Boolean expression
+# and, or, not
