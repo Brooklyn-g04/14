@@ -145,4 +145,63 @@ print( dogWeight >= 25 or catWeight <= 10) # True
 print(dogWeight < 25 and catWeight <= 10) # False
 print(not catWeight >= 10) # False
 # the not statement turns the true statement false
+# The conjunction or is more loose so if one is right and one is wrong then it will say that it is true, it takes both to be wrong to say that it is false
+# The and conjunction needs both to be right to make it true but if one is wrong then it is false
+
+#  Decision making skills
+alice = 20
+bob = 15
+carol = 25
+ans = 0
+if alice > 20:
+    ans = 300
+    print(ans)
+
+# False
+else:
+    ans = 200
+    print(ans)
+# else means otherwise so if the statement above is true then you will get 300 but if it is not true then otherwise you get 200
+
+
+if alice > 20:
+    if bob < 50:
+        ans = 150
+    else:
+        ans = 300
+else:
+    if carol > 500:
+        ans = 200
+    else:
+        ans = 75
+print(ans)
+
+# all statements above are false so otherwise the answer is 75
+
+value = 75
+if value > 10:
+    print("bigger than 10")
+else:
+    if value > 20:
+        print("bigger than 20")
+    else:
+        if value > 45:
+            print("bigger than 45")
+        else:
+            print("not bigger than much")
+# bigger than 10
+
+value = 75
+if value > 10:
+    print(" bigger than 100")
+elif value > 80:
+    print("bigger than 80")
+elif value > 45:
+    print(" bigger than 45")
+else:
+    print("not bigger than much")
+
+# elif is python's abbreviation for else if
+
+
 
