@@ -125,6 +125,24 @@ print(random.random())
 # > greater than
 # >= greater than or equal to
 # <= less than or equal to
+# != If it is not equal it is true
 
 # compound Boolean expression
 # and, or, not
+
+dogWeight = 25
+print(dogWeight == 25) # True
+print(dogWeight != 25) # False
+print(dogWeight <= 25) # True
+print(dogWeight >= 25) # True
+print(dogWeight < 25) # False
+print(dogWeight > 25) # False
+
+catWeight = 12
+
+print(dogWeight >= 25 and catWeight >= 10) # True
+print( dogWeight >= 25 or catWeight <= 10) # True
+print(dogWeight < 25 and catWeight <= 10) # False
+print(not catWeight >= 10) # False
+# the not statement turns the true statement false
+
