@@ -222,49 +222,7 @@ def montePi(numDarts):
 print(montePi(1000))
 
 
-import turtle
 
-def showMontePi(numDarts):
-    scn = turtle.Screen()
-    t = turtle.Turtle()
-
-    scn.setworldcoordinates(-2, -2, 2, 2)
-
-    t.penup()
-    t.goto(-1, 0)
-    t.pendown()
-    t.goto(1, 0)
-
-    t.penup()
-    t.goto(0, 1)
-    t.pendown()
-    t.goto(0, -1)
-
-
-    inCircle = 0
-    t.penup()
-
-    for i in range(numDarts):
-        x = random.random()
-        y = random.random()
-
-        distance = math.sqrt(x**2 + y**2)
-        t.goto(x, y)
-
-
-        if distance <= 1:
-            inCircle = inCircle + 1
-            t.color("pink")
-        else:
-            t.color("light blue")
-
-        t.dot()
-
-    pi = inCircle / numDarts * 4
-
-    return pi
-
-print(showMontePi(100))
 
 
 # assignment: Modify the simulation to plot points in the entire circle.
@@ -279,53 +237,7 @@ def showMontePi(numDarts):
 
     scn.setworldcoordinates(-2, -2, 2, 2)
 
-    t.penup()
-    t.goto(-1, 0)
-    t.pendown()
-    t.goto(1, 0)
-
-    t.penup()
-    t.goto(0, 1)
-    t.pendown()
-    t.goto(0, -1)
-
-    inCircle = 0
-    t.penup()
-
-    for i in range(numDarts):
-        x = random.random()
-        y = random.random()
-
-        distance = math.sqrt(x ** 2 + y ** 2)
-        t.goto(-x, -y)
-
-        if distance <= 1:
-            inCircle = inCircle + 1
-            t.color("pink")
-        else:
-            t.color("light blue")
-
-        t.dot()
-
-    pi = inCircle / numDarts * 4
-
-    return pi
-
-
-print(showMontePi(100))
-
-
-
-
-
-import turtle
-
-
-def showMontePi(numDarts):
-    scn = turtle.Screen()
-    t = turtle.Turtle()
-
-    scn.setworldcoordinates(-2, -2, 2, 2)
+    t.speed(50)
 
     t.penup()
     t.goto(-1, 0)
@@ -341,11 +253,11 @@ def showMontePi(numDarts):
     t.penup()
 
     for i in range(numDarts):
-        x = random.random()
-        y = random.random()
+        x = random.randrange(-100, 100)/100
+        y = random.randrange(-100, 100)/100
 
         distance = math.sqrt(x ** 2 + y ** 2)
-        t.goto(-x, y)
+        t.goto(x, y)
 
         if distance <= 1:
             inCircle = inCircle + 1
@@ -356,11 +268,12 @@ def showMontePi(numDarts):
         t.dot()
 
     pi = inCircle / numDarts * 4
+    scn.exitonclick()
 
     return pi
 
 
-print(showMontePi(100))
+print(showMontePi(1000))
 
 
 
@@ -370,46 +283,8 @@ print(showMontePi(100))
 
 
 
-import turtle
 
 
-def showMontePi(numDarts):
-    scn = turtle.Screen()
-    t = turtle.Turtle()
-
-    scn.setworldcoordinates(-2, -2, 2, 2)
-
-    t.penup()
-    t.goto(-1, 0)
-    t.pendown()
-    t.goto(1, 0)
-
-    t.penup()
-    t.goto(0, 1)
-    t.pendown()
-    t.goto(0, -1)
-
-    inCircle = 0
-    t.penup()
-
-    for i in range(numDarts):
-        x = random.random()
-        y = random.random()
-
-        distance = math.sqrt(x ** 2 + y ** 2)
-        t.goto(x, -y)
-
-        if distance <= 1:
-            inCircle = inCircle + 1
-            t.color("pink")
-        else:
-            t.color("light blue")
-
-        t.dot()
-
-    pi = inCircle / numDarts * 4
-
-    return pi
 
 
-print(showMontePi(100))
+
